@@ -20,7 +20,7 @@ func Init(r *gin.Engine, db *bun.DB, redisClient *redis.Client, config config.Co
 	//localUploaderNew := uploadHelper.NewLocalUploader(&config.UploadPath)
 	helper := helpers.NewHelper(config)
 
-	r.Static("/static", "./static/")
+	r.Static("/api/static", "./static/")
 
 	api := r.Group("/api/voting")
 	//m := middleware.CreateMiddleware(helper)
