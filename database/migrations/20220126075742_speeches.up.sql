@@ -12,5 +12,6 @@ CREATE TABLE speeches
     meta        json         null,
 --     user_id     int          null,
 --     category_id int unsigned null,
-    message     text     null
+    message     text     null,
+    source_id   integer
 );
